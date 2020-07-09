@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem=10px  10px/16px=62.5% */
+  background-image: url("https://c0.wallpaperflare.com/preview/734/944/13/black-and-gray-drum-set-on-stage.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.keys {
+  width: 88vw;
+  font-size: 2rem;
+  margin: 25rem auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.key {
+  color: #fff;
+  width: 10%;
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #f2f2f2;
+}
+
+kbd {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.sound {
+  font-size: 1.7rem;
+  color: goldenrod;
+}
+
+.playing {
+  width: 10%;
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
+  background-color: #669bbc;
+  border: 2px solid #000;
+}
+
+/*
+media query
+*/
+
+@media only screen and (max-width: 600px) {
+  .keys {
+    width: 100%;
+  }
+
+  kbd {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .sound {
+    font-size: 1rem;
+    color: goldenrod;
+  }
+}
+
+/*
+*/
