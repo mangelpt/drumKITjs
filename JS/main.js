@@ -4,7 +4,7 @@ function playSound(e) {
   if (!audio) return;
   audio.currentTime = 0;
   audio.play();
-  keyC.classList.add("playing");
+  keyC.classList.toggle("playing");
 }
 
 window.addEventListener("keydown", playSound);
